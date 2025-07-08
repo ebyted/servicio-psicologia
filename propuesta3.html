@@ -1,0 +1,288 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#8b5a3c",
+        "secondary": "#c4956c",
+        "accent": "#e8d5b7",
+        "warm": "#f4f0ea"
+      },
+      "fontFamily": {
+        "sans": [
+          "Inter",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-warm font-inter">
+
+<header id="header" class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                    <i class="fa-solid fa-leaf text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-playfair font-bold text-gray-900">Psicología Integral</h1>
+                    <span class="text-primary text-sm">Berenice García</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <span class="text-gray-700 hover:text-primary cursor-pointer transition-colors">Identidad</span>
+                <span class="text-gray-700 hover:text-primary cursor-pointer transition-colors">Servicios</span>
+                <span class="text-gray-700 hover:text-primary cursor-pointer transition-colors">Acerca</span>
+                <span class="text-gray-700 hover:text-primary cursor-pointer transition-colors">Contacto</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors">
+                    <i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp
+                </button>
+                <button class="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors">
+                    <i class="fa-solid fa-calendar-days mr-2"></i>Agendar
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="hero-proposal-1" class="bg-gradient-to-br from-warm via-accent/30 to-secondary/20 h-[700px] flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div>
+                <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    ✨ Bienestar Emocional Integral
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-playfair font-bold text-gray-900 mb-8 leading-tight">
+                    Sanando el alma,
+                    <span class="text-primary block">transformando vidas</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 leading-relaxed">Acompañamiento profesional personalizado para tu crecimiento emocional y bienestar integral</p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <button class="group bg-primary text-white px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                        <i class="fa-solid fa-calendar-check mr-3 group-hover:scale-110 transition-transform"></i>Agendar Consulta Gratuita
+                    </button>
+                    <button class="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-phone mr-3"></i>Llamar Ahora
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-2xl"></div>
+                <img class="relative w-96 h-96 rounded-full object-cover shadow-2xl mx-auto" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8ac49b6e38-49d8e9c516e42cad0837.png" alt="warm professional female psychologist in cozy therapy office with plants and books, natural lighting, serene atmosphere">
+            </div>
+        </div>
+    </section>
+
+    <section id="services-proposal-1" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-playfair font-bold text-gray-900 mb-6">Servicios Especializados</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Cada persona es única. Por eso ofrezco un enfoque personalizado que se adapta a tus necesidades específicas</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div id="service-individual-1" class="group bg-gradient-to-br from-warm to-accent/50 p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa-solid fa-user-heart text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Terapia Individual</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Espacio seguro para explorar emociones, superar obstáculos y desarrollar herramientas para tu bienestar</p>
+                    <ul class="space-y-2 text-gray-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Ansiedad y estrés</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Depresión</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Autoestima</li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 rounded-xl hover:bg-primary/90 transition-colors">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>Consultar por WhatsApp
+                    </button>
+                </div>
+                <div id="service-couple-1" class="group bg-gradient-to-br from-secondary/20 to-primary/10 p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary/30 transition-colors">
+                        <i class="fa-solid fa-heart text-secondary text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Terapia de Pareja</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Fortalece tu relación, mejora la comunicación y construye vínculos más profundos y duraderos</p>
+                    <ul class="space-y-2 text-gray-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-secondary mr-3"></i>Comunicación efectiva</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-secondary mr-3"></i>Resolución de conflictos</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-secondary mr-3"></i>Intimidad emocional</li>
+                    </ul>
+                    <button class="w-full bg-secondary text-white py-3 rounded-xl hover:bg-secondary/90 transition-colors">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>Consultar por WhatsApp
+                    </button>
+                </div>
+                <div id="service-workshops-1" class="group bg-gradient-to-br from-accent/50 to-warm p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa-solid fa-users text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Talleres Grupales</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Crecimiento colectivo en un ambiente de apoyo mutuo y aprendizaje compartido</p>
+                    <ul class="space-y-2 text-gray-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Inteligencia emocional</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Mindfulness</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-primary mr-3"></i>Autoconocimiento</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button class="w-full bg-primary text-white py-3 rounded-xl hover:bg-primary/90 transition-colors">
+                            <i class="fa-brands fa-whatsapp mr-2"></i>Consultar por WhatsApp
+                        </button>
+                        <button class="w-full border border-primary text-primary py-3 rounded-xl hover:bg-primary hover:text-white transition-colors">
+                            <i class="fa-solid fa-user-plus mr-2"></i>Inscribirse al Taller
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-proposal-1" class="py-24 bg-gradient-to-br from-warm to-accent/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img class="w-full h-[500px] rounded-3xl object-cover shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff5556273a-6eff7120917987027b20.png" alt="professional female psychologist in modern therapy office with diplomas, books, plants, warm lighting">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">8+</div>
+                            <div class="text-gray-600">Años de experiencia</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        👩‍⚕️ Sobre Berenice García
+                    </div>
+                    <h2 class="text-4xl font-playfair font-bold text-gray-900 mb-8">Tu bienestar es mi prioridad</h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Con más de 8 años de experiencia, me especializo en crear un espacio seguro donde puedas explorar, sanar y crecer. Mi enfoque integral combina técnicas humanistas y cognitivo-conductuales.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <i class="fa-solid fa-graduation-cap text-primary mr-4"></i>
+                            <span class="text-gray-700">Maestría en Psicología Clínica</span>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <i class="fa-solid fa-certificate text-primary mr-4"></i>
+                            <span class="text-gray-700">Certificación Gestalt</span>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <i class="fa-solid fa-award text-primary mr-4"></i>
+                            <span class="text-gray-700">Especialista en Parejas</span>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-sm">
+                            <i class="fa-solid fa-heart text-primary mr-4"></i>
+                            <span class="text-gray-700">Enfoque Humanista</span>
+                        </div>
+                    </div>
+                    <button class="bg-primary text-white px-8 py-4 rounded-full hover:bg-primary/90 transition-colors">
+                        <i class="fa-solid fa-calendar mr-3"></i>Agendar Primera Sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-cta-1" class="py-24 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-primary/80"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl font-playfair font-bold mb-8">¿Lista para comenzar tu transformación?</h2>
+            <p class="text-xl mb-12 opacity-90">El primer paso hacia el bienestar emocional comienza con una conversación</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <button class="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors font-semibold">
+                    <i class="fa-brands fa-whatsapp mr-3"></i>Escribir por WhatsApp
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors font-semibold">
+                    <i class="fa-solid fa-calendar mr-3"></i>Agendar en Calendly
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-leaf text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-playfair font-bold">Psicología Integral</h3>
+                        <span class="text-gray-400">Berenice García</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">Transformando vidas a través de la psicología integral con un enfoque humanista y personalizado.</p>
+                <div class="flex space-x-4">
+                    <i class="fa-brands fa-whatsapp text-2xl hover:text-green-400 cursor-pointer transition-colors"></i>
+                    <i class="fa-brands fa-instagram text-2xl hover:text-pink-400 cursor-pointer transition-colors"></i>
+                    <i class="fa-brands fa-facebook text-2xl hover:text-blue-400 cursor-pointer transition-colors"></i>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-6">Servicios</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="hover:text-white cursor-pointer transition-colors">Terapia Individual</li>
+                    <li class="hover:text-white cursor-pointer transition-colors">Terapia de Pareja</li>
+                    <li class="hover:text-white cursor-pointer transition-colors">Talleres Grupales</li>
+                    <li class="hover:text-white cursor-pointer transition-colors">Consulta Online</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-6">Contacto</h4>
+                <div class="space-y-3 text-gray-400">
+                    <p class="flex items-center"><i class="fa-solid fa-phone mr-3"></i>+52 55 1234 5678</p>
+                    <p class="flex items-center"><i class="fa-solid fa-envelope mr-3"></i>berenice@psicologiaintegral.com</p>
+                    <p class="flex items-center"><i class="fa-solid fa-map-marker-alt mr-3"></i>Ciudad de México</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+            <p>© 2024 Psicología Integral Berenice García. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body></html>
